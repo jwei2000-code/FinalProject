@@ -10,7 +10,7 @@ The Deep Work Halo is a privacy-focused workspace monitor designed to help users
 * **Form Factor:** It uses a C-bridge design. One part sits behind the ear (battery/logic), and a smaller part sits inside/front of the ear (sensor), connected by a flexible silicone bridge.
 * **Physical Features:** Completely screen-less and light-less to prevent user distraction. It houses the internal electronics and battery, featuring only a single pinhole reset button on the back.
 
-![Sensing Device Ear Hook](未命名作品 44.jpg)
+![Sensing Device Ear Hook](earclip.jpg)
 
 ### The Display Device ("The Flow Monolith")
 * **Form Factor:** A minimalist, solid cube or rectangular prism (approx. 6cm x 6cm).
@@ -26,7 +26,7 @@ The Deep Work Halo is a privacy-focused workspace monitor designed to help users
     * **Behavior:**
         * *Standby:* Off or faint white (Clock Mode).
         * *Flow State:* Gently pulses in warm Amber/Red (Do Not Disturb signal).
-![Display Device Monolith](未命名作品 43.jpg)
+![Display Device Monolith](Bitmap.jpg)
 
 ## 3. Technical Architecture
 
@@ -46,15 +46,4 @@ The Deep Work Halo is a privacy-focused workspace monitor designed to help users
     * *Desktop:* LiPo battery with USB-C charging.
 
 
-![System Communication Sketch](未命名作品 45.jpg)
-
-```cpp
-graph LR
-    A[User Head Motion] -->|Physical Input| B(Sensing Device\n'Wearable Ear Hook');
-    B -- "BLE Wireless\n(Transmits Focus State only)" --> C{Display Device\n'Desktop Monolith'};
-    C -->|Bitmap Visuals| A;
-    C -->|"Breathing Aura\n(Amber/Red Light)"| D[External Environment\nColleagues];
-
-    style B fill:#f9f,stroke:#333,stroke-width:2px,color:#000
-    style C fill:#ccf,stroke:#333,stroke-width:2px,color:#000
-```
+![System Communication Sketch](connection.jpg)
