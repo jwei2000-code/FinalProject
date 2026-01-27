@@ -47,3 +47,5 @@ The Deep Work Halo is a privacy-focused workspace monitor designed to help users
 
 
 ![System Communication Sketch](connection.jpg)
+
+![System Communication Sketch](20260127134130_155_16.png)
